@@ -423,28 +423,7 @@ Convert a sticker to a photo (mods only)
 !tosticker
 Convert a photo to sticker
 !say [msg] to [name]
-Says a massage to a name
-!time [city]
-Sows time of a city
-!t2i [text]
-Convert a text to an image
-!web [url]
-Gets a web shot from a url
-!tagall [text]
-Tags all of the members and returns text (mods only)
-
-4- Filtering:
-/filter + [word]
-Filter a word
-/filter – [word]
-Un Filter a word
-/filterlist
-List of filtered words
-____________
-Send /share to get robot number
-____________
-You can use [ ! , / or # ]or don’t use them
-More Details on @Sbss_Team
+S
 ]]
   }
   serialize_to_file(config, './data/config.lua')
