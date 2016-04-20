@@ -230,6 +230,7 @@ function create_config( )
     "insudo",
     "invite",
     "help_fa",
+    "help_en",
     "isup",
     "leave_ban",
     "lock_badw",
