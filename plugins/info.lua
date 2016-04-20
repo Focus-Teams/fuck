@@ -1,5 +1,5 @@
 do
-local AmirSbss = 122774063
+local sargardan= 216446918
 
 local function setrank(msg, name, value) -- setrank function
   local hash = nil
@@ -45,7 +45,7 @@ local function res_user_callback(extra, success, result) -- /info <username> fun
   local um_hash = 'msgs:'..result.id..':'..extra.chat2
   user_info_msgs = tonumber(redis:get(um_hash) or 0)
   text = text..'Total messages : '..user_info_msgs..'\n\n'
-  text = text..'#Sbss_Team'
+  text = text..'#Shield_Team'
   send_msg(extra.receiver, text, ok_cb,  true)
   else
 	send_msg(extra.receiver, ' Username not found.', ok_cb, false)
@@ -65,8 +65,8 @@ local function action_by_id(extra, success, result)  -- /info <ID> function
   local hash = 'rank:'..extra.chat2..':variables'
   local value = redis:hget(hash, result.id)
   if not value then
-	 if result.id == tonumber(AmirSbss) then
-	   text = text..'Rank : Amir Sbss \n\n'
+	 if result.id == tonumber(sargardan) then
+	   text = text..'Rank : sargardan\n\n'
 	  elseif is_admin2(result.id) then
 	   text = text..'Rank : Admin \n\n'
 	  elseif is_owner2(result.id, extra.chat2) then
@@ -84,7 +84,7 @@ local function action_by_id(extra, success, result)  -- /info <ID> function
   local um_hash = 'msgs:'..result.id..':'..extra.chat2
   user_info_msgs = tonumber(redis:get(um_hash) or 0)
   text = text..'Total messages : '..user_info_msgs..'\n\n'
-  text = text..'#Sbss_Team'
+  text = text..'#shield_Team'
   send_msg(extra.receiver, text, ok_cb,  true)
   else
   send_msg(extra.receiver, 'id not found.\nuse : /info @username', ok_cb, false)
@@ -104,7 +104,7 @@ local function action_by_reply(extra, success, result)-- (reply) /info  function
 		local value = redis:hget(hash, result.from.id)
 		 if not value then
 		    if result.from.id == tonumber(AmirSbss) then
-		       text = text..'Rank : Amir Sbss \n\n'
+		       text = text..'Rank : sargardan\n\n'
 		     elseif is_admin2(result.from.id) then
 		       text = text..'Rank : Admin \n\n'
 		     elseif is_owner2(result.from.id, result.to.id) then
@@ -118,12 +118,13 @@ local function action_by_reply(extra, success, result)-- (reply) /info  function
 		   text = text..'Rank : '..value..'\n\n'
 		 end
          local user_info = {} 
-  local uhash = 'user:'..result.from.id
+  lo
+cal uhash = 'user:'..result.from.id
   local user = redis:hgetall(uhash)
   local um_hash = 'msgs:'..result.from.id..':'..result.to.id
   user_info_msgs = tonumber(redis:get(um_hash) or 0)
   text = text..'Total messages : '..user_info_msgs..'\n\n'
-  text = text..'#Sbss_Team'
+  text = text..'#Shield_Team'
   send_msg(extra.receiver, text, ok_cb, true)
 end
 
@@ -171,8 +172,8 @@ local function run(msg, matches)
 	if hash then
 	  local value = redis:hget(hash, msg.from.id)
 	  if not value then
-		if msg.from.id == tonumber(AmirSbss) then
-		 text = text..'Rank : Amir Sbss \n\n'
+		if msg.from.id == tonumber(sargardan) then
+		 text = text..'Rank : sargardan\n\n'
 		  send_document(get_receiver(msg), "/root/robot/amirsbss.webp", ok_cb, false)
 		elseif is_sudo(msg) then
 		 text = text..'Rank : Sudo \n\n'
@@ -203,7 +204,7 @@ local function run(msg, matches)
 	 text = text..'Group name : '..msg.to.title..'\n'
      text = text..'Group ID : '..msg.to.id
     end
-	text = text..'\n\n#Sbss_Team'
+	text = text..'\n\n#Shield_Team'
     return send_msg(receiver, text, ok_cb, true)
     end
   end
@@ -226,7 +227,8 @@ return {
 	'!info: Return your info and the chat info if you are in one.',
 	'(Reply)!info: Return info of replied user if used by reply.',
 	'!info <id>: Return the info\'s of the <id>.',
-	'!info @<user_name>: Return the member @<user_name> information from the current chat.',
+	'!info @<ایدی>: Return the memb
+er @<ایدی> information from the current chat.',
 	'!setrank <userid> <rank>: change members rank.',
 	'(Reply)!setrank <rank>: change members rank.',
   },
