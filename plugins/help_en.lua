@@ -1,81 +1,124 @@
 do
 function run(msg, matches)
 if is_momod(msg) then
-return [[ 
-دستورات فارسی ربات:
-〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰
-⚜اداره اعضا⚜
-⭕️ اخراج {یوزرنیم/ریپلای/ایدی}
-اخراج فرد از گروه
-⭕️ بن {یوزرنیم/ریپلای/ایدی}
-بن کردن فردازگروه
-⭕️ حذف بن {یوزرنیم/ایدی}
-ان بن کردن فرد
-⭕️ ایدی {ریپلای/معمولی}
-⚜اداره گروه⚜
-💢 تنظیم قوانین {متن}
-تنظیم متن به عنوان قوانین گروه
-💢 قوانین
-نمایش قوانین گروه
-💢 تنظیم توضیحات
-تنظیم یک متن به عنوان توضیحات
-💢 توضیحات
-دریافت توضیحات
-💢 تنظیم نام {نام}
-تنظیم نام گروه 
-💢 تنظیم عکس
-تنظیم عکس گروه
-💢 دارنده {ریپلای/ایدی}
-تنظیم فرد به عنوان صاحب گروه
-💢 ترفیع {ریپلای/یوزرنیم/ایدی}
-ترفیع مدیرجدید
-💢 تنزل {ریپلای/یوزرنیم/ایدی}
-تنزل یک مدیر
-💢 پاک کردن {مدیران/توضیحات/قوانین/اعضا}
-پاک کردن هریک از این ها
-💢 قفل {نام/اعضا/اسپم/لینک/تک/فحش/اینگلیسی/ورود/رسانه/اشتراک گذاری}
-قفل کردن هریک از اینها
-💢 بازکردن {نام/عکس/اعضا/اسپم/لینک/تگ/فحش/اینگلیسی/ورود/رسانه/اشتراک گذاری}
-بازکردن هریک از اینها
-💢 لیست مدیران
-نمایش لیست مدیرها
-💢 حساسیت {عدد}
-تنظیم حساسیت به اسپم
-💢 تنظیمات
-نمایش تنظیمات گروه
-💢 اینفو {یوزرنیم/ریپلای/معمولی}
-نمایش مشخصات
-⚜ابزار ها⚜
-🔰 محاسبه {فرمول}
-محاسبه یک فرمول ریاضی
-🔰 بگو {متن}
-تکرار یک متن
-🔰 زمان {شهر}
-نشان دادن زمان دریک شهر
-🔰 تبدل {متن}
-تبدل یک متن به عکس
-🔰تصویر {آدرس}
-تصویر یک سایت
-🔰تگ {متن}
-تگ کردن همه افراد گروه و ارسال متن (فقط مدیران)
-⚜فیلترینگ⚜
-🔒فیلتر + {کلمه}
-فیلتر کردن یک کلمه
-🔓فیلتر - {کلمه}
-حذف فیلتر یک کلمه
-📝لیست فیلتر
-لیست کلمات فیلتر شده
-〰〰〰〰〰〰〰〰〰〰〰〰
-Sodo: @Xxx_sargardan_xxX
+return [[
+English Commands:
+
+📥Member managing📤
+
+⭕️ /kick [reply/username]
+Kick a Member
+
+⭕️ /ban [reply/username]
+Ban a Member
+
+⭕️ /unban [username]
+Unban a Member
+
+⭕️ /id [reply/none]
+Get Group or Member id
+
+2- Group Managing:
+💢 /set rules [Text]
+Set a Text for Group Rules
+
+💢 /rules
+Returns Group Rules
+
+💢 /set about [Text]
+Set a Text for Group Description
+
+💢 /about
+Returns Group Description
+
+💢 /setname [name]
+Set Group Name
+
+💢 /setphoto
+Set a Photo for Group
+
+💢 /promote [reply/username]
+Promote a New Moderator
+
+💢 /demote [reply/username]
+Demote a Moderator
+
+💢 /clean [rules/about/modlist]
+Clean each of them
+
+💢 /lock [name/ member/flood/link/tag/badw/English/join/media/share]
+Lock each of them
+
+💢 /unlock [name/photo/member/flood/link/tag/badw/English/join/media/share]
+Unlock each of them
+
+💢 /modlist
+Group mods list
+
+💢 /setleader [reply/id]
+Set group leader
+
+💢 /setflood [number]
+Set group flood
+
+💢 /settings
+Shows group settings
+
+💢 /info [reply/username/none]
+Returns user info
+
+📥Tools📤
+
+🔰 !calc [formula]
+Calculate a formula
+
+🔰 !echo [text]
+Echo a text
+
+🔰 !tophoto
+Convert a sticker to a photo (mods only)
+
+🔰 !tosticker
+Convert a photo to sticker
+
+🔰 !say [msg] to [name]
+Says a massage to a name
+
+🔰 !time [city]
+Sows time of a city
+
+🔰 !t2i [text]
+Convert a text to an image
+
+🔰 !web [url]
+Gets a web shot from a url
+
+🔰 !tagall [text]
+Tags all of the members and returns text (mods only)
+
+📥Filtering📤
+
+🔒 /filter + [word]
+Filter a word
+
+🔓 /filter – [word]
+Un Filter a word
+
+📝 /filterlist
+List of filtered words
+____________
+☎️Send /share to get robot number
+____________
+Sodo: @Xxx_sargardan_xxx
 Sodo: @Xxx_benyamin_mafiyam_revale_xxX
 ]]
 end
 end
 return {
 patterns = {
-"^(راهنما)$",
-"^(کمک)$",
-" ^[/#!](help fa)$",
+"^(help)$",
+"^(help)$",
+" ^[/#!](help en)$",
 },
 run = run
 }
