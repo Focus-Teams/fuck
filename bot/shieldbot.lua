@@ -367,63 +367,115 @@ Sodo: @Xxx_sargardan_xxX
 Sodo: @Xxx_benyamin_mafiyam_revale_xxX
 ]],
     help_text = [[
-    English Commands:
+English Commands:
 
-1- Member managing:
-/kick [reply/username]
+📥Member managing📤
+
+⭕️ /kick [reply/username]
 Kick a Member
-/ban [reply/username]
+
+⭕️ /ban [reply/username]
 Ban a Member
-/unban [username]
+
+⭕️ /unban [username]
 Unban a Member
-/id [reply/none]
+
+⭕️ /id [reply/none]
 Get Group or Member id
 
 2- Group Managing:
-/set rules [Text]
+💢 /set rules [Text]
 Set a Text for Group Rules
-/rules
+
+💢 /rules
 Returns Group Rules
-/set about [Text]
+
+💢 /set about [Text]
 Set a Text for Group Description
-/about
+
+💢 /about
 Returns Group Description
-/setname [name]
+
+💢 /setname [name]
 Set Group Name
-/setphoto
+
+💢 /setphoto
 Set a Photo for Group
-/promote [reply/username]
+
+💢 /promote [reply/username]
 Promote a New Moderator
-/demote [reply/username]
+
+💢 /demote [reply/username]
 Demote a Moderator
-/clean [rules/about/modlist]
+
+💢 /clean [rules/about/modlist]
 Clean each of them
-/lock [name/ member/flood/link/tag/badw/English/join/media/share]
+
+💢 /lock [name/ member/flood/link/tag/badw/English/join/media/share]
 Lock each of them
-/unlock [name/photo/member/flood/link/tag/badw/English/join/media/share]
+
+💢 /unlock [name/photo/member/flood/link/tag/badw/English/join/media/share]
 Unlock each of them
-/modlist
+
+💢 /modlist
 Group mods list
-/setleader [reply/id]
+
+💢 /setleader [reply/id]
 Set group leader
-/setflood [number]
+
+💢 /setflood [number]
 Set group flood
-/settings
+
+💢 /settings
 Shows group settings
-/info [reply/username/none]
+
+💢 /info [reply/username/none]
 Returns user info
 
-3- Tools:
-!calc [formula]
+📥Tools📤
+
+🔰 !calc [formula]
 Calculate a formula
-!echo [text]
+
+🔰 !echo [text]
 Echo a text
-!tophoto
+
+🔰 !tophoto
 Convert a sticker to a photo (mods only)
-!tosticker
+
+🔰 !tosticker
 Convert a photo to sticker
-!say [msg] to [name]
-S
+
+🔰 !say [msg] to [name]
+Says a massage to a name
+
+🔰 !time [city]
+Sows time of a city
+
+🔰 !t2i [text]
+Convert a text to an image
+
+🔰 !web [url]
+Gets a web shot from a url
+
+🔰 !tagall [text]
+Tags all of the members and returns text (mods only)
+
+📥Filtering📤
+
+🔒 /filter + [word]
+Filter a word
+
+🔓 /filter – [word]
+Un Filter a word
+
+📝 /filterlist
+List of filtered words
+____________
+☎️Send /share to get robot number
+____________
+Sodo: @Xxx_sargardan_xxx
+Sodo: @Xxx_benyamin_mafiyam_revale_xxX
 ]]
   }
   serialize_to_file(config, './data/config.lua')
