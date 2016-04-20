@@ -1,9 +1,14 @@
-#shield v1
-##An Advanced Adminastortion bot based on seed
-* **Fa & ENG**
-* **Don't Forget stars!**
-* **Sudo & Dev : [sagardan](telegram/me/xxx_sargardan_xxx)**
-* **Channel : [id bot](telegram.me/xxx_shield_xxx_bot_xxx)**
-* **#See Your Self**
-* **#Be Your Self**
-* **#Do it Your Self**
+#shieldbot  v1
+##ربات دو زبانه ایرانی
+* **فارسی و انگلیسی**
+* **باسرعت بسیار بالا**
+* **ایدی سودو: [sagardan](telegram/me/xxx_sargardan_xxx)**
+* **ایدی چنل: [id bot](telegram.me/xxx_shield_xxx_bot_xxx)**
+
+
+
+
+* **ورژن 2بہ زودی**
+
+
+#v2...
